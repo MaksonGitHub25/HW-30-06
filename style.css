@@ -8,6 +8,7 @@ body {
     height: 100vh;
     background-color: bisque;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -15,7 +16,7 @@ body {
 h6 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-    animation: changeShadowColor 5000ms infinite linear;
+    animation: changeShadowColor 10000ms infinite linear;
 }
 
 @keyframes changeShadowColor {
@@ -37,4 +38,19 @@ h6 {
     100% {
         text-shadow: 1px 0 10px rgb(255, 0, 255);
     }
+}
+
+.btn {
+    margin-top: 30px;
+    width: 10%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px black;
 }
