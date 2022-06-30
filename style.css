@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    animation: changeShadowColor 5000ms infinite linear;
+}
+
+@keyframes changeShadowColor {
+    0% {
+        text-shadow: 1px 0 10px rgb(255, 0, 255);
+    }
+    20% {
+        text-shadow: 1px 0 10px rgb(255, 0, 0);
+    }
+    40% {
+        text-shadow: 1px 0 10px rgb(255, 196, 0);
+    }
+    60% {
+        text-shadow: 1px 0 10px rgb(30, 255, 0);
+    }
+    80% {
+        text-shadow: 1px 0 10px rgb(0, 21, 255);
+    }
+    100% {
+        text-shadow: 1px 0 10px rgb(255, 0, 255);
+    }
+}
